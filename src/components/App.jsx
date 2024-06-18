@@ -7,9 +7,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
+import "../Styles/Global.scss"
+
 const App = () => {
     return (
-        <div>
+        <div className="global">
             <Router>
                 <Header />
                 <Routes>

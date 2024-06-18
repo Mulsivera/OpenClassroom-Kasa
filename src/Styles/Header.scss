@@ -5,8 +5,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 45px 100px;
-        max-width: 1280px;
+        margin: 50px 20px;
+        max-width: 1240px;
         min-width: 335px;
         width: 100%;
         height: 68px;
@@ -28,6 +28,7 @@
     .header {
         .header--div {
             height: 47px;
+            margin: 20px;
             .header--nav--link {
                 font-size: 12px;
                 margin-left: 25px;

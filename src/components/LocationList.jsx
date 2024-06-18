@@ -3,18 +3,20 @@ import "../Styles/LocationList.scss"
 import Card from "./card";
 
 function LocationList() {
-    console.log(locationList)
+
     return (
         <div className="locationList">
             <div className="locationList--div">
                 <div className="locationList--list">
                     {locationList.map((location) =>
-                    <Card locationCover={location.cover} locationId={location.id} locationTitle={location.title}/>)}
+                    <article key={location.id}>
+                    <Card locationCover={location.cover} locationTitle={location.title}/>
+                    </article>
+                    )}                  
                 </div>
             </div>
         </div>
     )
-
 }
 
 export default LocationList

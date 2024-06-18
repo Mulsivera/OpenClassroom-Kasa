@@ -5,8 +5,9 @@ import HousingSheet from '../pages/Housing-sheet';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './Header';
+import Footer from './Footer';
 
-const Routing = () => {
+const App = () => {
     return (
         <div>
             <Router>
@@ -17,9 +18,10 @@ const Routing = () => {
                     <Route path="/a-propos" element={<About />} />
                     <Route path="/fiche-logement" element={<HousingSheet />} />
                 </Routes>
+                <Footer />
             </Router>
         </div>
     )
 }
 
-export default Routing
+export default App

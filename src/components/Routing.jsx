@@ -4,10 +4,13 @@ import Error from '../pages/Error';
 import HousingSheet from '../pages/Housing-sheet';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Header from './Header';
+
 const Routing = () => {
     return (
         <div>
             <Router>
+                <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="*" element={<Error />} />

@@ -16,7 +16,6 @@
         justify-content: center;
         align-items: center;
         border-radius: 25px;
-        margin: 0px 20px;
         margin-bottom: 40px;
         background-size: cover;
         background-position: center;
@@ -26,6 +25,7 @@
             font-family: "Montserrat", sans-serif;
             font-weight: bold;
             font-size: 48px;
+            margin-left: 15px
         }
     }
 }
@@ -37,6 +37,7 @@
             justify-content: left;
             border-radius: 10px;
             margin-bottom: 20px;
+            width: 335px;
             .banner--text {
                 font-size: 24px;
                 width: 225px;
@@ -45,12 +46,10 @@
     }
 }
 
-@media (max-width: 770px) {
+@media (min-device-width: 481px) and (max-device-width: 1025px) { 
     .banner {
         .banner--div {
-            .banner--text {
-                margin-left: 15px
-            }
+            width: 690px;
         }
     }
 }

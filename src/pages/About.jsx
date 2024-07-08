@@ -1,7 +1,6 @@
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import { Aboutlist } from '../data/about';
-import "../Styles/About.scss"
 
 function About() {
     return(

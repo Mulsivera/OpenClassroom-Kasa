@@ -36,11 +36,14 @@
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1025px) {
     .locationList {
         .locationList--div {
+            background-color: white;
             .locationList--list {
                 margin: 0px;
+                column-gap: 20px;
+                row-gap: 20px;
                 .locationList--card {
                     width: 335px;
                     height: 225px;

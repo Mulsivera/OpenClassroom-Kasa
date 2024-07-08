@@ -11,15 +11,17 @@ import "../Styles/Global.scss"
 
 const App = () => {
     return (
-        <div className="global">
+        <div>
             <Router>
                 <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="*" element={<Error />} />
-                    <Route path="/a-propos" element={<About />} />
-                    <Route path="/fiche-logement" element={<HousingSheet />} />
-                </Routes>
+                <div className="global">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="*" element={<Error />} />
+                        <Route path="/a-propos" element={<About />} />
+                        <Route path="/fiche-logement" element={<HousingSheet />} />
+                    </Routes>
+                </div>
                 <Footer />
             </Router>
         </div>

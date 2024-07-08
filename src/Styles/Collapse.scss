@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
     .collapse--title--div {
         background-color: #FF6060;
         width: 1023px;
@@ -30,10 +30,10 @@
     }
     .collapse--content--div_show {
         width: 1023px;
-        height: 100px;
+        height: 125px;
         transition-duration: 0.5s;
         .collapse--content--text_show {
-            font-size: 18xp;
+            font-size: 18px;
             font-family: "Montserrat", sans-serif;
             margin: 25px;
         }
@@ -42,4 +42,24 @@
         height: 0px;
         overflow: hidden;
         transition-duration: 0.5s;
+}}
+
+@media (max-width: 767px) {
+    .collapse--div {
+        margin-bottom: 20px;
+        .collapse--title--div {
+            width: 335px;
+            height: 30px;
+            .collapse--title--text {
+                font-size: 13px;
+            }
+        }
+        .collapse--content--div_show {
+            width: 335px;
+            height: 150px;
+            .collapse--content--text_show {
+                font-size: 12px;
+                margin: 10px 25px;;
+        }
+    }
 }}

@@ -29,6 +29,7 @@
         .header--div {
             height: 47px;
             margin: 20px;
+            width: 335px;;
             .header--nav--link {
                 font-size: 12px;
                 margin-left: 25px;
@@ -36,6 +37,14 @@
             .header--logo {
                 height: 47px;
             }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .header {
+        .header--div {
+            width: 690px;
         }
     }
 }

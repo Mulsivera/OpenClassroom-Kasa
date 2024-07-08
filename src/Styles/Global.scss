@@ -1,6 +1,7 @@
 #root {
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
     .global {
         display: flex;
         flex-direction: column;

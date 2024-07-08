@@ -1,0 +1,19 @@
+.carrousel {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 90px;
+    .carrousel--navbuttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+    .carrousel--slidenumber {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}

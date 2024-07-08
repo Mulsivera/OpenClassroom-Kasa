@@ -1,0 +1,100 @@
+.sheet--content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    .carrousel {
+        width: 1240px;
+        height: 415px;
+        margin: auto;
+    }
+    .sheet--datas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        width: 1240px;
+        margin: auto;
+        .sheet--infos {
+            display: flex;
+            justify-content: space-between;
+            .sheet--leftcolumn {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .title--div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .sheet--title {
+                        margin: 0px;
+                        font-size: 36px;
+                        font-weight: 500;
+                        font-family: "Montserrat", sans-serif;
+                        color: #FF6060;
+                    }
+                }
+                .sheet--localisation {
+                    margin: 0px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: "Montserrat", sans-serif;
+                    color: black;
+                }
+                .tags--div {
+                    display: flex;
+                    gap: 10px;
+                    .sheet--tag {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: auto;
+                        padding: 2px 20px;
+                        height: 25px;
+                        background-color: #FF6060;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        font-family: "Montserrat", sans-serif;
+                        color: white;
+                    }
+                }
+            }
+            .sheet--rightcolumn {
+                .sheet--hostinfos {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    gap: 10px;
+                    .sheet--hostname {
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: "Montserrat", sans-serif;
+                        color: #FF6060;
+                        width: 75px;
+                        text-align: right;
+                        border: none;
+                    }
+                    .sheet--hostpicture {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 100px;
+                    }
+                }
+                .sheet--rating {
+                    display: flex;
+                    gap: 15px;
+                }
+        
+            }
+        }
+        .sheet--collapsesection {
+            display: flex;
+            justify-content: space-between;
+            .collapse {
+                width: 45%;
+            }
+        }
+    }
+    
+}

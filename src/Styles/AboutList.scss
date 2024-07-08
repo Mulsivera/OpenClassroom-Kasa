@@ -1,0 +1,29 @@
+.about--page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .listabout--div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about--page {
+        .listabout--div {
+            width: 335px;
+        }
+    }
+}
+
+@media (min-device-width: 481px) and (max-device-width: 1025px) { 
+    .about--page {
+        .listabout--div {
+            width: 690px;
+        }
+    }
+}
+
+

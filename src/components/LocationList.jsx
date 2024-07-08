@@ -10,7 +10,7 @@ function LocationList() {
                 <div className="locationList--list">
                     {locationList.map((location) =>
                     <article key={location.id}>
-                    <Card locationCover={location.cover} locationTitle={location.title}/>
+                    <Card locationCover={location.cover} locationTitle={location.title} locationId={location.id}/>
                     </article>
                     )}                  
                 </div>

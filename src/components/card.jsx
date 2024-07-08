@@ -1,12 +1,13 @@
-function Card({ locationCover , locationTitle}) {
-    function logauclick() {
-        console.log("Vous avez cliquer sur la carte qui a pour titre " + locationTitle)
-    }
+import { Link } from "react-router-dom";
+
+function Card({ locationCover , locationTitle }) {
     return (
+        <Link to={`/location/${locationTitle}`}>
         <div style={{ background: `url(${locationCover})`,
-        }} className="locationList--card" onClick={logauclick}>
+        }} className="locationList--card">
         <p className="locationList--title">{locationTitle}</p>
         </div>
+        </Link>
     )
 }
 

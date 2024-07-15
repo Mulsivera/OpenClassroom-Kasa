@@ -1,10 +1,11 @@
 import Banner from '../components/Banner';
 import LocationList from '../components/LocationList';
 
+import bannerimage from "../assets/banner-home.svg"
 function Home() {
     return (
         <div>
-            <Banner bannerbackground={"BackgroundHome"} bannertext={"Chez vous, partout et ailleurs"} />
+            <Banner bannerbackground={bannerimage} bannertext={"Chez vous, partout et ailleurs"} />
             <LocationList />
         </div>
     )

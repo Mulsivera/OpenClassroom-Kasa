@@ -1,13 +1,16 @@
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import { Aboutlist } from '../data/about';
-import "../Styles/AboutList.scss"
+import "../Styles/About.scss"
+
+import bannerimage from "../assets/banner-about.svg"
 
 function About() {
+    
     return(
-        <div className="about--page">
-            <Banner bannerbackground={"BackgroundAbout"} bannertext={""} />
-            <div className="listabout--div">
+        <div>
+            <Banner bannerbackground={bannerimage} bannertext={""} />
+            <div className="[ collapse-list ] [ f-column ] [ js-coenter ]">
                 {Aboutlist.map((about) =>
                 <article key={about.id}>
                     <Collapse collapseTitle={about.title} collapseContent={about.content} />

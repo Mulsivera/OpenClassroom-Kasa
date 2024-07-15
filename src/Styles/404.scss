@@ -1,51 +1,31 @@
-.p404--content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.content {
     margin: 150px 0px;
     gap: 150px;
-    .p404--number {
+    .content__number {
         font-size: 288px;
-        margin: 0px;
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        font-weight: bold;
-        color: #FF6060;
     }
-    .p404--text {
+    .content__text {
         font-size: 36px;
-        font-weight: 500;
-        text-align: center;
-        color: #FF6060;
-        font-family: "Montserrat", sans-serif;
-        margin: 0px;
     }
-    .p404--link {
-        display: flex;
-        justify-content: center;
+    .content__link {
         font-size: 18px;
-        font-weight: 500;
-        color: black;
-        font-family: "Montserrat", sans-serif;
-        margin: 0px;
     }
 }
 
 
 @media (max-width: 480px) {
-.p404--content {
-    margin: 100px 0px;
-    gap: 100px;
-    .p404--number {
-        font-size: 96px;
+    .content {
+        margin: 100px 0px;
+        gap: 100px;
+        .content__number {
+            font-size: 96px;
+        }
+        .content__text {
+            font-size: 18px;
+            padding: 0px 60px;
+        }
+        .content__link {
+            font-size: 14px;
+        }
     }
-    .p404--text {
-        font-size: 18px;
-        padding: 0px 60px;
-    }
-    .p404--link {
-        font-size: 14px;
-        font-weight: 500;
-    }
-}
 }

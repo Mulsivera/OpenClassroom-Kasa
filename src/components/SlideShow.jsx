@@ -10,25 +10,15 @@ function Slideshow ({image}) {
         backgroundImage: `url(${image[slidenumber]})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '100%',
-        width: '100%',
     }}
 
     const nextSlide = () => {
-        if (slidenumber === image.length - 1) {
-            setCount(0);
-        } else {
-            setCount(slidenumber + 1)
-        }
+        setCount(slidenumber >= image.length - 1 ? 0 : slidenumber + 1);
         }
 
     const prevSlide = () => {
-        if (slidenumber === 0) {
-            setCount(image.length - 1);
-        } else {
-            setCount(slidenumber - 1)
-        }
-        }
+        setCount(slidenumber <= image.lenght - 1 ? 0 : slidenumber - 1);
+    }
 
     return (
     <div style={styleBackground.container} className="carrousel">

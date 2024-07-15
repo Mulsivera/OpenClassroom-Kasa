@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
+import "../Styles/Content.scss"
 import "../Styles/Global.scss"
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
         <div>
             <Router>
                 <Header />
-                <div className="global">
+                <div>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="*" element={<Error />} />

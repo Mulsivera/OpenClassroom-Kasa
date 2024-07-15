@@ -1,17 +1,99 @@
-#root {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    .global {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 1440px;
-        min-width: 375px;
-        width: 100%;
-    }
+:root {
+
+    --color-red:   #FF6060;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
 }
 
 body {
-    margin: 0;
+
+    p {
+        margin: 0px;
+        font-family: "Montserrat", sans-serif;
+    }
+
 }
+
+/* Composition */
+
+    /* Display */
+
+        .f-row {
+            display: flex;
+        }
+
+        .f-r-row {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .f-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .f-r-column {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+    /* Justify Content */
+
+        .jc-left {
+            justify-content: left;
+        }
+
+        .jc-center {
+            justify-content: center;
+        }
+
+        .jc-right {
+            justify-content: right;
+        }
+
+    /* Align Items */
+
+        .ai-center {
+            align-items: center;
+        }
+
+/* Utility */
+
+    /* Text Color */
+
+        .tc-red {
+            color: var(--color-red);
+        }
+
+        .tc-black {
+            color: var(--color-black);
+        }
+
+        .tc-white {
+            color: var(--color-white);
+        }
+
+    /* Text Align */
+
+        .ta-left {
+            text-align: left;
+        }
+
+        .ta-center {
+            text-align: center;
+        }
+
+        .ta-right {
+            text-align: right;
+        }
+
+    /* Font Weight */
+
+        .fw-500 {
+            font-weight: 500;
+        }
+
+        .fw-700 {
+            font-weight: 700;
+        }

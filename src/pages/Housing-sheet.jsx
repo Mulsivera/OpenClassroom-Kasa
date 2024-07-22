@@ -21,33 +21,33 @@ function HousingSheet() {
     }
 
     return (
-        <div className="sheet--content">
+        <div className="[ sheet--content ] [ flex-column ] [ justify-center ]">
             <div className="carrousel">
                 <Slideshow image={location.pictures} />
             </div>
-            <div className="sheet--datas">
-                <div className="sheet--infos">
-                    <div className="sheet--leftcolumn">
-                        <div className="title--div">
-                            <p className="sheet--title">{location.title}</p>
-                            <p className="sheet--localisation">{location.location}</p>
+            <div className="[ sheet--datas ] [ flex-column ] [ justify-center ]">
+                <div className="[ sheet--infos ] [ flex-row ] [ justify-between ] [ mobile-flex-column ]">
+                    <div className="[ sheet--leftcolumn ] [ flex-column ]">
+                        <div className="[ title--div ] [ flex-column ]">
+                            <p className="[ sheet--title ] [ fw-500 ] [ tc-red ]">{location.title}</p>
+                            <p className="[ sheet--localisation ] [ fw-500 ] [ tc-black ]">{location.location}</p>
                         </div>
-                        <div className="tags--div">
+                        <div className="[ tags--div ] [ flex-row ]">
                             {location.tags.map((tag) =>
-                            <p className="sheet--tag">{tag}</p>)}
+                            <p className="[ sheet--tag ] [ flex-row ] [ justify-center ] [ ai-center ] [ bc-red ] [ fw-700 ] [ tc-white ]">{tag}</p>)}
                         </div>
                     </div>
-                    <div className="sheet--rightcolumn">
-                        <div className="sheet--hostinfos">
-                            <p className="sheet--hostname">{location.host.name}</p>
+                    <div className="[ sheet--rightcolumn ] [ flex-column ] [ mobile-flex-row-reverse ] [ mobile-justify-between ]">
+                        <div className="[ sheet--hostinfos ] [ flex-row ] [ justify-right ] [ ai-center ]">
+                            <p className="[ sheet--hostname ] [ fw-500 ] [ tc-red ] [ ta-right ]">{location.host.name}</p>
                             <img className="sheet--hostpicture" src={location.host.picture} alt="Propriétaire"></img>
                         </div>
-                        <div className="sheet--rating">
+                        <div className="[ sheet--rating ] [ flex-row ] [ ai-center ]">
                             {listetoile}
                         </div>
                     </div>
                 </div>
-                <div className="sheet--collapsesection">
+                <div className="[ sheet--collapsesection ] [ flex-row ] [ justify-between ]">
                     <div className="collapse"><Collapse collapseTitle={"Description"} collapseContent={location.description} /></div>
                     <div className="collapse"><Collapse collapseTitle={"Équipement"} collapseContent={location.equipments.map((equipment) => <p>{equipment}</p>)} /></div>
                 </div>

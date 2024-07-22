@@ -1,100 +1,72 @@
 .sheet--content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     gap: 15px;
-    .carrousel {
-        width: 1240px;
-        height: 415px;
-        margin: auto;
-    }
     .sheet--datas {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         gap: 15px;
-        width: 1240px;
-        margin: auto;
+        width: clamp(335px, 90vw, 1240px);
         .sheet--infos {
-            display: flex;
-            justify-content: space-between;
+            row-gap: 15px;
             .sheet--leftcolumn {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+                gap: clamp(10px, 2.75vw, 20px);
                 .title--div {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
+                    gap: 5px;
                     .sheet--title {
-                        margin: 0px;
-                        font-size: 36px;
-                        font-weight: 500;
-                        font-family: "Montserrat", sans-serif;
-                        color: #FF6060;
+                        font-size: clamp(18px, 4.8vw, 36px);
+                    }
+                    .sheet--localisation {
+                        font-size: clamp(14px, 3.75vw, 18px);
                     }
                 }
-                .sheet--localisation {
-                    margin: 0px;
-                    font-size: 18px;
-                    font-weight: 500;
-                    font-family: "Montserrat", sans-serif;
-                    color: black;
-                }
                 .tags--div {
-                    display: flex;
                     gap: 10px;
                     .sheet--tag {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: auto;
                         padding: 2px 20px;
                         height: 25px;
-                        background-color: #FF6060;
                         border-radius: 10px;
-                        font-size: 14px;
-                        font-weight: 700;
-                        font-family: "Montserrat", sans-serif;
-                        color: white;
+                        font-size: clamp(10px, 2.75vw, 14px);
                     }
                 }
             }
             .sheet--rightcolumn {
+                gap: 15px;
                 .sheet--hostinfos {
-                    display: flex;
-                    justify-content: right;
-                    align-items: center;
-                    gap: 10px;
+                    gap: 15px;
                     .sheet--hostname {
-                        font-size: 18px;
-                        font-weight: 500;
-                        font-family: "Montserrat", sans-serif;
-                        color: #FF6060;
+                        font-size: clamp(12px, 3.2vw, 18px);
                         width: 75px;
-                        text-align: right;
                         border: none;
                     }
                     .sheet--hostpicture {
-                        width: 64px;
-                        height: 64px;
+                        width: clamp(32px, 8.5vw, 64px);
+                        height: clamp(32px, 8.5vw, 64px);
                         border-radius: 100px;
                     }
                 }
                 .sheet--rating {
-                    display: flex;
                     gap: 15px;
                 }
         
             }
         }
         .sheet--collapsesection {
-            display: flex;
-            justify-content: space-between;
+            margin-top: 15px;
+            column-gap: 75px;
             .collapse {
-                width: 45%;
+                width: 582px;
             }
         }
     }
-    
+}
+
+@media (max-width: 1024px ) {
+    .sheet--content {
+        .sheet--datas {
+            .sheet--collapsesection {
+                flex-wrap: wrap;
+                row-gap: 20px;
+                .collapse {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

@@ -10,7 +10,7 @@ function About() {
     return(
         <div>
             <Banner bannerbackground={bannerimage} bannertext={""} />
-            <div className="[ collapse-list ] [ f-column ] [ js-coenter ]">
+            <div className="[ collapse-list ] [ flex-column ] [ js-coenter ]">
                 {Aboutlist.map((about) =>
                 <article key={about.id}>
                     <Collapse collapseTitle={about.title} collapseContent={about.content} />

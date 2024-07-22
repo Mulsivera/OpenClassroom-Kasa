@@ -1,55 +1,146 @@
 :root {
 
-    --color-red:   #FF6060;
-    --color-black: #000000;
-    --color-white: #FFFFFF;
+    --clr-red:   #FF6060;
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-grey:  #F6F6F6;
 
 }
 
 body {
-
-    p {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    p, a {
         margin: 0px;
         font-family: "Montserrat", sans-serif;
     }
+}
 
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
 }
 
 /* Composition */
 
     /* Display */
 
-        .f-row {
+        .none {
+            display: none;
+        }
+
+        .flex-row {
             display: flex;
         }
 
-        .f-r-row {
+        .flex-row-reverse {
             display: flex;
             flex-direction: row-reverse;
         }
 
-        .f-column {
+        .flex-column {
             display: flex;
             flex-direction: column;
         }
 
-        .f-r-column {
+        .flex-column-reverse {
             display: flex;
             flex-direction: column-reverse;
         }
 
+        /* Mobile */
+
+            @media (max-width: 480px) {
+
+                .mobile-none {
+                    display: none;
+                }
+
+                .mobile-flex-row {
+                    display: flex;
+                    flex-direction: row;
+                }
+            
+                .mobile-flex-row-reverse {
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+            
+                .mobile-flex-column {
+                    display: flex;
+                    flex-direction: column;
+                }
+            
+                .mobile-flex-column-reverse {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+
+            }
+
     /* Justify Content */
 
-        .jc-left {
+        .justify-left {
             justify-content: left;
         }
 
-        .jc-center {
+        .justify-center {
             justify-content: center;
         }
 
-        .jc-right {
+        .justify-right {
             justify-content: right;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-around {
+            justify-content: space-around;
+        }
+
+        .justify-end {
+            justify-content: flex-end;
+        }
+
+        .justify-start {
+            justify-content: flex-start;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 480px) {
+
+        .mobile-justify-left {
+            justify-content: left;
+          }
+          
+          .mobile-justify-center {
+            justify-content: center;
+          }
+          
+          .mobile-justify-right {
+            justify-content: right;
+          }
+          
+          .mobile-justify-between {
+            justify-content: space-between;
+          }
+          
+          .mobile-justify-around {
+            justify-content: space-around;
+          }
+          
+          .mobile-justify-end {
+            justify-content: flex-end;
+          }
+          
+          .mobile-justify-start {
+            justify-content: flex-start;
+          }
+
         }
 
     /* Align Items */
@@ -63,15 +154,19 @@ body {
     /* Text Color */
 
         .tc-red {
-            color: var(--color-red);
+            color: var(--clr-red);
         }
 
         .tc-black {
-            color: var(--color-black);
+            color: var(--clr-black);
         }
 
         .tc-white {
-            color: var(--color-white);
+            color: var(--clr-white);
+        }
+
+        .tc-grey {
+            color: var(--clr-grey);
         }
 
     /* Text Align */
@@ -96,4 +191,22 @@ body {
 
         .fw-700 {
             font-weight: 700;
+        }
+
+    /* Background-color */
+
+        .bc-red {
+            background-color: var(--clr-red);
+        }
+
+        .bc-black {
+            background-color: var(--clr-black);
+        }
+
+        .bc-white {
+            background-color: var(--clr-white);
+        }
+
+        .bc-grey {
+            background-color: var(--clr-grey);
         }

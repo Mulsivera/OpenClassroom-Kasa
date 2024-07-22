@@ -1,17 +1,7 @@
 .collapse-list {
-    width: 1023px;
-    margin: 0 auto;
+    width: clamp(335px, 90vw, 1023px);
+    margin: clamp(20px, 5.5vw, 40px) auto 0 auto;
+    gap: clamp(15px, 4vw, 30px);
 }
 
-@media (min-device-width: 481px) and (max-device-width: 1025px) { 
-    .collapse-list {
-        width: 690px;
-    }
-}
-
-@media (max-width: 480px) {
-    .collapse-list {
-        width: 335px;
-    }
-}
 

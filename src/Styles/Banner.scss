@@ -1,44 +1,14 @@
 .banner {
     .banner--div {
-        max-width: 1240px;
-        min-width: 335px;
-        width: 100%;
-        height: 223px;
-        border-radius: 25px;
-        margin-bottom: 40px;
+        width: clamp(335px, 90vw, 1240px);
+        height: clamp(111px, 29.2vw, 223px);
+        border-radius: clamp(10px, 2.75vw, 25px);
         background-size: cover;
         background-position: center;
         box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.55);
-        margin: 0 auto;
         .banner--text {
-            font-size: 48px;
-            margin-left: 15px
+            font-size: clamp(24px, 6.4vw, 48px);
+            margin-left: 20px
         }
     }
 }
-
-
-@media (max-width: 480px) {
-    .banner {
-        .banner--div {
-            height: 111px;
-            justify-content: left;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            width: 335px;
-            .banner--text {
-                font-size: 24px;
-                width: 225px;
-            }
-        }
-    }
-}
-
-@media (min-device-width: 481px) and (max-device-width: 1025px) { 
-    .banner {
-        .banner--div {
-            width: 690px;
-        }
-    }
-}
-

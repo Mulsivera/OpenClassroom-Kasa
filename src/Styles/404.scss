@@ -1,31 +1,14 @@
 .content {
-    margin: 150px 0px;
-    gap: 150px;
+    margin: clamp(100px, 26.75vw, 150px) 0px;
+    gap: clamp(100px, 26.75vw, 150px);
     .content__number {
-        font-size: 288px;
+        font-size: clamp(96px, 25vw, 288px)
     }
     .content__text {
-        font-size: 36px;
+        font-size: clamp(18px, 4.8vw, 36px);
+        padding: 0px 60px;
     }
     .content__link {
-        font-size: 18px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .content {
-        margin: 100px 0px;
-        gap: 100px;
-        .content__number {
-            font-size: 96px;
-        }
-        .content__text {
-            font-size: 18px;
-            padding: 0px 60px;
-        }
-        .content__link {
-            font-size: 14px;
-        }
+        font-size: clamp(14px, 2vw, 18px);
     }
 }

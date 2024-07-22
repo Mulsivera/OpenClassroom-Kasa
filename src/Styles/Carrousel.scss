@@ -1,18 +1,17 @@
 .carrousel {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 90px;
+    width: clamp(335px, 90vw, 1240px);
+    height: clamp(255px, 68vw, 415px);
+    gap: clamp(90px, 24vw, 100px);
+    border-radius: 25px;
+    margin: auto;
     .carrousel--navbuttons {
-        display: flex;
-        justify-content: space-between;
         padding: 0px 25px;
+        .carrousel--chevron {
+            font-size: clamp(48px, 13vw, 156px);
+        }
     }
     .carrousel--slidenumber {
-        text-align: center;
         font-size: 18px;
-        font-weight: 500;
-        font-family: "Montserrat", sans-serif;
-        color: white;
         margin: 0;
         margin-bottom: 30px;
     }

@@ -7,9 +7,9 @@ import "../Styles/Footer.scss"
 function Footer() {
     return (
         <footer className="footer">
-            <div className="[ footer--div ] [ flex-column-reverse ] [ bc-black ]">
-                <p className="[ footer--text ] [ tc-white ] [ ta-center ] [ fw-500 ]">© 2020 Kasa. All rights reserved</p>
-                <img src={logo} alt="logo de Kasa" className="footer--logo"></img>
+            <div className="[ footer__div ] [ flex-column-reverse ] [ bc-black ]">
+                <p className="[ footer__text ] [ tc-white ] [ ta-center ] [ fw-500 ]">© 2020 Kasa. All rights reserved</p>
+                <img src={logo} alt="logo de Kasa" className="footer__logo"></img>
             </div>
         </footer>
     )

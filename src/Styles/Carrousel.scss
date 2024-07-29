@@ -4,15 +4,16 @@
     gap: clamp(90px, 24vw, 100px);
     border-radius: 25px;
     margin: auto;
-    .carrousel--navbuttons {
+    .carrousel__navbuttons {
         padding: 0px 25px;
         .carrousel--chevron {
-            font-size: clamp(48px, 13vw, 156px);
+            font-size: clamp(48px, 13vw, 125px);
         }
     }
-    .carrousel--slidenumber {
+    .carrousel__slidenumber {
         font-size: 18px;
         margin: 0;
         margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }

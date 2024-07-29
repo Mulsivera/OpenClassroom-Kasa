@@ -1,8 +1,8 @@
-.content {
+.content__div {
     margin: clamp(100px, 26.75vw, 150px) 0px;
     gap: clamp(100px, 26.75vw, 150px);
     .content__number {
-        font-size: clamp(96px, 25vw, 288px)
+        font-size: clamp(96px, 25vw, 288px);
     }
     .content__text {
         font-size: clamp(18px, 4.8vw, 36px);

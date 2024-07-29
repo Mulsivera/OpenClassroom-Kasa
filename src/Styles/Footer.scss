@@ -1,11 +1,11 @@
 .footer {
     margin-top: clamp(20px, 5.5vw, 50px);
-    .footer--div {
+    .footer__div {
         height: 210px;
-    .footer--logo {
+    .footer__logo {
         height: 40px;
     }
-    .footer--text {
+    .footer__text {
         font-size: clamp(12px, 3.2vw, 24px);
         margin: 40px 0 30px 0;
     }
@@ -14,8 +14,8 @@
 
 @media (max-width: 480px) {
     .footer {
-        .footer--div {
-            .footer--text {
+        .footer__div {
+            .footer__text {
                 margin: 10px auto 60px auto; 
                 width: 100px;
             }

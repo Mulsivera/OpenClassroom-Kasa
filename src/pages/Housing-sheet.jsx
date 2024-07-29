@@ -1,8 +1,13 @@
+// Imports des bibliothèques externes
 import { useParams } from "react-router-dom"
 import { locationList } from "../data/logements";
-import "../Styles/HousingSheet.scss"
+
+// Imports des modules internes
 import Collapse from '../components/Collapse';
-import Slideshow from "../components/SlideShow";
+import Carrousel from "../components/Carrousel";
+
+// Imports des styles
+import "../Styles/HousingSheet.scss"
 
 function HousingSheet() {
 
@@ -21,33 +26,33 @@ function HousingSheet() {
     }
 
     return (
-        <div className="[ sheet--content ] [ flex-column ] [ justify-center ]">
+        <div className="[ sheet__content ] [ flex-column ] [ justify-center ]">
             <div className="carrousel">
-                <Slideshow image={location.pictures} />
+                <Carrousel image={location.pictures} />
             </div>
-            <div className="[ sheet--datas ] [ flex-column ] [ justify-center ]">
-                <div className="[ sheet--infos ] [ flex-row ] [ justify-between ] [ mobile-flex-column ]">
-                    <div className="[ sheet--leftcolumn ] [ flex-column ]">
-                        <div className="[ title--div ] [ flex-column ]">
-                            <p className="[ sheet--title ] [ fw-500 ] [ tc-red ]">{location.title}</p>
-                            <p className="[ sheet--localisation ] [ fw-500 ] [ tc-black ]">{location.location}</p>
+            <div className="[ sheet__datas ] [ flex-column ] [ justify-center ]">
+                <div className="[ sheet__infos ] [ flex-row ] [ justify-between ] [ mobile-flex-column ]">
+                    <div className="[ sheet__leftcolumn ] [ flex-column ]">
+                        <div className="[ title__div ] [ flex-column ]">
+                            <p className="[ sheet__title ] [ fw-500 ] [ tc-red ]">{location.title}</p>
+                            <p className="[ sheet__localisation ] [ fw-500 ] [ tc-black ]">{location.location}</p>
                         </div>
-                        <div className="[ tags--div ] [ flex-row ]">
+                        <div className="[ tags__div ] [ flex-row ]">
                             {location.tags.map((tag) =>
-                            <p className="[ sheet--tag ] [ flex-row ] [ justify-center ] [ ai-center ] [ bc-red ] [ fw-700 ] [ tc-white ]">{tag}</p>)}
+                            <p className="[ sheet__tag ] [ flex-row ] [ justify-center ] [ ai-center ] [ bc-red ] [ fw-700 ] [ tc-white ]">{tag}</p>)}
                         </div>
                     </div>
-                    <div className="[ sheet--rightcolumn ] [ flex-column ] [ mobile-flex-row-reverse ] [ mobile-justify-between ]">
-                        <div className="[ sheet--hostinfos ] [ flex-row ] [ justify-right ] [ ai-center ]">
-                            <p className="[ sheet--hostname ] [ fw-500 ] [ tc-red ] [ ta-right ]">{location.host.name}</p>
-                            <img className="sheet--hostpicture" src={location.host.picture} alt="Propriétaire"></img>
+                    <div className="[ sheet__rightcolumn ] [ flex-column ] [ mobile-flex-row-reverse ] [ mobile-justify-between ]">
+                        <div className="[ sheet__hostinfos ] [ flex-row ] [ justify-right ] [ ai-center ]">
+                            <p className="[ sheet__hostname ] [ fw-500 ] [ tc-red ] [ ta-right ]">{location.host.name}</p>
+                            <img className="sheet__hostpicture" src={location.host.picture} alt="Propriétaire"></img>
                         </div>
-                        <div className="[ sheet--rating ] [ flex-row ] [ ai-center ]">
+                        <div className="[ sheet__rating ] [ flex-row ] [ ai-center ]">
                             {listetoile}
                         </div>
                     </div>
                 </div>
-                <div className="[ sheet--collapsesection ] [ flex-row ] [ justify-between ]">
+                <div className="[ sheet__collapsesection ] [ flex-row ] [ justify-between ]">
                     <div className="collapse"><Collapse collapseTitle={"Description"} collapseContent={location.description} /></div>
                     <div className="collapse"><Collapse collapseTitle={"Équipement"} collapseContent={location.equipments.map((equipment) => <p>{equipment}</p>)} /></div>
                 </div>

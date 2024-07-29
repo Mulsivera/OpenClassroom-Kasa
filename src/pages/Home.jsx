@@ -1,7 +1,8 @@
+// Imports des modules internes
 import Banner from '../components/Banner';
 import LocationList from '../components/LocationList';
-
 import bannerimage from "../assets/banner-home.svg"
+
 function Home() {
     return (
         <div>

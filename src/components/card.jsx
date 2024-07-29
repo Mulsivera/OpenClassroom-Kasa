@@ -8,7 +8,7 @@ function Card({ locationCover , locationTitle }) {
     return (
         <Link to={`/location/${locationTitle}`}>
             <div style={{ background: `url(${locationCover})`,}} className="[ card ] [ flex-column ] [ justify-end ]">
-                <p className="[ card__title ] [ tc-white ] [ fw-700 ]">{locationTitle}</p>
+                <p className="[ card__title ] [ text-color-white ] [ font-weight-700 ]">{locationTitle}</p>
             </div>
         </Link>
     )

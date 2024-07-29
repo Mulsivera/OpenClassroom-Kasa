@@ -34,17 +34,17 @@ function HousingSheet() {
                 <div className="[ sheet__infos ] [ flex-row ] [ justify-between ] [ mobile-flex-column ]">
                     <div className="[ sheet__leftcolumn ] [ flex-column ]">
                         <div className="[ title__div ] [ flex-column ]">
-                            <p className="[ sheet__title ] [ fw-500 ] [ tc-red ]">{location.title}</p>
-                            <p className="[ sheet__localisation ] [ fw-500 ] [ tc-black ]">{location.location}</p>
+                            <p className="[ sheet__title ] [ font-weight-500 ] [ text-color-red ]">{location.title}</p>
+                            <p className="[ sheet__localisation ] [ font-weight-500 ] [ text-color-black ]">{location.location}</p>
                         </div>
                         <div className="[ tags__div ] [ flex-row ]">
                             {location.tags.map((tag) =>
-                            <p className="[ sheet__tag ] [ flex-row ] [ justify-center ] [ ai-center ] [ bc-red ] [ fw-700 ] [ tc-white ]">{tag}</p>)}
+                            <p className="[ sheet__tag ] [ flex-row ] [ justify-center ] [ align-item-center ] [ background-color-red ] [ font-weight-700 ] [ text-color-white ]">{tag}</p>)}
                         </div>
                     </div>
                     <div className="[ sheet__rightcolumn ] [ flex-column ] [ mobile-flex-row-reverse ] [ mobile-justify-between ]">
-                        <div className="[ sheet__hostinfos ] [ flex-row ] [ justify-right ] [ ai-center ]">
-                            <p className="[ sheet__hostname ] [ fw-500 ] [ tc-red ] [ ta-right ]">{location.host.name}</p>
+                        <div className="[ sheet__hostinfos ] [ flex-row ] [ justify-right ] [ align-item-center ]">
+                            <p className="[ sheet__hostname ] [ font-weight-500 ] [ text-color-red ] [ ta-right ]">{location.host.name}</p>
                             <img className="sheet__hostpicture" src={location.host.picture} alt="Propriétaire"></img>
                         </div>
                         <div className="[ sheet__rating ] [ flex-row ] [ ai-center ]">

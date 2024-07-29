@@ -25,10 +25,10 @@ function Carrousel ({image}) {
 
     return (
     <div style={styleBackground.container} className="[ carrousel ] [ flex-column-reverse ] [ mobile-justify-center ]">
-      <p className="[ carrousel__slidenumber ] [ ta-center ] [ fw-500 ] [ tc-white ] [ mobile-none ]">{slidenumber + 1}/{image.length}</p>
+      <p className="[ carrousel__slidenumber ] [ text-align-center ] [ font-weight-500 ] [ text-color-white ] [ mobile-none ]">{slidenumber + 1}/{image.length}</p>
       <div className="[ carrousel__navbuttons ] [ flex-row ] [ justify-between ]">
-            <p onClick={prevSlide} className="[ carrousel--chevron ] [ tc-white ]">&#8249;</p>
-            <p onClick={nextSlide} className="[ carrousel--chevron ] [ tc-white ]">&#8250;</p>
+            <p onClick={prevSlide} className="[ carrousel--chevron ] [ text-color-white ]">&#8249;</p>
+            <p onClick={nextSlide} className="[ carrousel--chevron ] [ text-color-white ]">&#8250;</p>
         </div>
     </div>
     )

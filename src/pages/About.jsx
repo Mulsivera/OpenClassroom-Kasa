@@ -8,7 +8,6 @@ import bannerimage from "../assets/banner-about.svg"
 import "../Styles/About.scss"
 
 function About() {
-    
     return(
         <div>
             <Banner bannerbackground={bannerimage} bannertext={""} />

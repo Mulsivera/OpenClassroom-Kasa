@@ -9,7 +9,7 @@ function LocationList() {
 
     return (
         <div className="[ locationList ] [ flex-row ] [ justify-center ]">
-            <div className="[ locationList__div ] [ bc-grey ]">
+            <div className="[ locationList__div ] [ background-color-grey ]">
                 <div className="[ locationList__list ] [ flex-row ] [ justify-center ]">
                     {locationList.map((location) =>
                     <article key={location.id}>

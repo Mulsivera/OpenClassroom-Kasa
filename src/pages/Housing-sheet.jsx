@@ -11,8 +11,8 @@ import "../Styles/HousingSheet.scss"
 
 function HousingSheet() {
 
-    const { locationTitle } = useParams();
-    const location = locationList.find((location) => location.title === locationTitle)
+    const { locationId } = useParams();
+    const location = locationList.find((location) => location.id === locationId)
 
     let fullstarnumber =Number(location.rating)
     let emptystarnumber = 5-Number(location.rating)

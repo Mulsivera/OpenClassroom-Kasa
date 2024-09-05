@@ -1,6 +1,6 @@
 // Imports des modules internes
 import { locationList } from "../data/logements";
-import Card from "./LaCarte";
+import Card from "./Card";
 
 // Imports des styles
 import "../Styles/LocationList.scss"

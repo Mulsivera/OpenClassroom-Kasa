@@ -4,33 +4,39 @@ import { useState } from "react"
 // Imports des styles
 import "../Styles/Carrousel.scss"
 
-function Carrousel ({image}) {
-
+function Carrousel({ image }) {
     const [slidenumber, setCount] = useState(0);
 
     const styleBackground = {
         container: {
-        backgroundImage: `url(${image[slidenumber]})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-    }}
+            backgroundImage: `url(${image[slidenumber]})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }
+    }
 
     const nextSlide = () => {
         setCount(slidenumber >= image.length - 1 ? 0 : slidenumber + 1);
-        }
+    }
 
     const prevSlide = () => {
-        setCount(slidenumber === 0 ? image.length - 1  : slidenumber - 1);
+        setCount(slidenumber === 0 ? image.length - 1 : slidenumber - 1);
     }
 
     return (
-    <div style={styleBackground.container} className="[ carrousel ] [ flex-column-reverse ] [ mobile-justify-center ]">
-      <p className="[ carrousel__slidenumber ] [ text-align-center ] [ font-weight-500 ] [ text-color-white ] [ mobile-none ]">{slidenumber + 1}/{image.length}</p>
-      <div className="[ carrousel__navbuttons ] [ flex-row ] [ justify-between ]">
-            <p onClick={prevSlide} className="[ carrousel__chevron ] [ text-color-white ]">&#8249;</p>
-            <p onClick={nextSlide} className="[ carrousel__chevron ] [ text-color-white ]">&#8250;</p>
+        <div style={styleBackground.container} className="[ carrousel ] [ flex-column-reverse ] [ mobile-justify-center ]">
+            {image.length > 1 && (
+                <p className="[ carrousel__slidenumber ] [ text-align-center ] [ font-weight-500 ] [ text-color-white ] [ mobile-none ]">
+                    {slidenumber + 1}/{image.length}
+                </p>
+            )}
+            {image.length > 1 && (
+                <div className="[ carrousel__navbuttons ] [ flex-row ] [ justify-between ]">
+                    <p onClick={prevSlide} className="[ carrousel__chevron ] [ text-color-white ]">&#8249;</p>
+                    <p onClick={nextSlide} className="[ carrousel__chevron ] [ text-color-white ]">&#8250;</p>
+                </div>
+            )}
         </div>
-    </div>
     )
 }
 

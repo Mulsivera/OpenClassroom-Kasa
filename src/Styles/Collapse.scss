@@ -13,6 +13,9 @@
             width: clamp(30px, 8vw, 40px);
             height: clamp(30px, 8vw, 40px);
         }
+        .collapse__title__button_close:hover, .collapse__title__button_open:hover {
+            cursor: pointer;
+        }
         .collapse__title__button_open {
             transform: rotate(180deg);
         }

@@ -9,7 +9,11 @@
         .carrousel__chevron {
             font-size: clamp(48px, 13vw, 125px);
         }
+        .carrousel__chevron:hover {
+            cursor: pointer;
+        }
     }
+
     .carrousel__slidenumber {
         font-size: 18px;
         margin: 0;
